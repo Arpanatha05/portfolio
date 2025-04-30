@@ -34,12 +34,7 @@
     justify-content: space-between;
   }
   
-  .logo {
-    color: #00d8ff;
-    font-size: 1.6rem;
-    font-weight: 700;
-    
-  }
+  
   
   
   
@@ -96,6 +91,70 @@
   .toggle-menu {
     display: none;
   }
+
+  /* logo effect */
+  .logo{
+    position: relative;
+    padding: 0.75em 1.5em;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background: #111;
+    border: 3px solid transparent;
+    border-radius: 12px;
+    cursor: pointer;
+    z-index: 1;
+    overflow: hidden;
+    transition: color 0.3s ease;
+  }
+  
+  .logo::before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    background: linear-gradient(45deg,
+      #ff0000, #ff7300, #ffeb00,
+      #47ff00, #00ffee, #2b65ff,
+      #8000ff, #ff0080, #ff0000);
+    background-size: 400%;
+    z-index: -1;
+    border-radius: 15px;
+    animation: borderAnimation 8s linear infinite;
+  }
+  
+  .logo::after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    right: 3px;
+    bottom: 3px;
+    background: #111;
+    border-radius: 9px;
+    z-index: -1;
+  }
+  
+  @keyframes borderAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  .logo {
+    color: #00d8ff;
+    font-size: 1.2rem;
+    font-weight: 500;
+    
+  }
+  
   
   @media (max-width: 768px) {
     .hamburger {

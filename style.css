@@ -225,6 +225,8 @@ body.dark {
 
 
 
+
+
   /* this is main body part  css*/
   body{
     background:var(--bg-color);
@@ -275,6 +277,18 @@ body.dark {
     color: #00ffee;
     filter: drop-shadow(0px 0px 2px #00ffee);
   }
+  @media (max-width: 768px){
+    .home{
+      display: flex;
+      flex-direction: column-reverse;
+
+    }
+    #picture{
+      height: 300px;
+    width: 300px;
+    }
+  }
+
 
   
   

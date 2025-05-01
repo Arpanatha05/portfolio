@@ -367,7 +367,7 @@ body.dark h1, body.dark .support a {color: black;}
   }
   .icon :hover {
     color: #00ffee;
-    filter: drop-shadow(0px 0px 2px #00ffee);
+    filter: drop-shadow(0px 0px 1.2px #00ffee);
   }
   /* animated border for picture */
   *{
@@ -379,6 +379,23 @@ body.dark h1, body.dark .support a {color: black;}
     background-size: cover;
 
   }
+  #btn1{
+    background-color: #1a1a1a;
+    color: #00ffee;
+    margin-top: 30px;
+    border: 1px solid #00ffee;
+    border-radius: 10px;
+    font-weight: 300;
+    animation: slideright 1s ease forwards;
+    animation-delay: 1s;
+
+  }
+  #btn1:hover{
+    background-color: #00ffee;
+    color: black;
+    filter: drop-shadow(0px 0px 6px #00ffee);
+  }
+
   
 
   
@@ -552,8 +569,8 @@ body.dark h1, body.dark .support a {color: black;}
     .picture{
     height: 300px;
     width: 300px;
-    margin-top: 240px;
-    margin-left: 200px;
+    margin-top: 200px;
+    margin-left: 180px;
     }
   }
 

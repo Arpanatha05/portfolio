@@ -4,7 +4,9 @@
     padding: 0;
     box-sizing: border-box;
   }
-  
+  html{
+    scroll-behavior: smooth;
+  }
 
   body {
     font-family: 'Segoe UI', sans-serif;
@@ -518,6 +520,70 @@ body.dark h1, body.dark .support a {color: black;}
     
   } 
 
+  /* this is for about section */
+  .About{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: px;
+  }
+
+  .headshot {
+
+    flex-shrink: 0;
+    margin: 20px;
+    height: calc(150px + 6vw);
+    width: calc(150px + 6vw);
+    border: calc(8px + 0.2vw) solid transparent;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    background-size: cover;
+    box-sizing: border-box;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+  }
+  .headshot-2 {
+    height: 400px;
+    width: 400px;
+    margin-bottom: 100px;
+    border-radius: 50%;
+    background-image: url(arpan2.jpg), linear-gradient(to bottom right, #ff3cac, #562b7c, #2b86c5);
+  }
+  
+  .description  {
+    height: 600px;
+    width: 600px;
+    margin-top: 100px;
+  }
+  .description h1 {
+    font-size:32px;
+  }
+  .description h3 {
+    font-size:22px;
+  }
+  .description a{
+    color: #00ffee;
+
+  }
+  #btn2{
+  margin-top: 40px;
+  background-color: #1a1a1a;
+    color: #00ffee;
+    
+    border: 1px solid #00ffee;
+    border-radius: 10px;
+    font-weight: 300;
+    animation: slideright 1s ease forwards;
+    animation-delay: 1s;
+  }
+  #btn2:hover{
+    background-color: #00ffee;
+    color: black;
+    filter: drop-shadow(0px 0px 6px #00ffee);
+  }
+  
+
+  
+
 
   @keyframes slidetop{
     0%{
@@ -570,7 +636,24 @@ body.dark h1, body.dark .support a {color: black;}
     height: 300px;
     width: 300px;
     margin-top: 200px;
-    margin-left: 180px;
+    margin-left: 170px;
+    }
+    .About{
+      flex-direction: column;
+    }
+    .headshot{
+    height: 300px;
+    width: 300px;
+    margin-top: 200px;
+    margin-left: 10px;
+    }
+    .description{
+      height: 350px;
+      width: 350px;
+      margin-top: 30px;
+    }
+    #name{
+      margin-top: 10px;
     }
   }
 

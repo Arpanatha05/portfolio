@@ -607,6 +607,52 @@ body.dark h1, body.dark .support a {color: black;}
     stroke-dasharray: 760;
     }
 
+
+    /* this is srvise area section */
+    .service{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 140px;
+      font-size: 20px;
+    }
+    .service a{
+      color: #00ffee;
+    }
+    .service h1{
+      margin-bottom: 5px;
+    }
+    
+    .up{
+      height: 300px;
+      width: 100%;
+      border: 2px solid white;
+      display: flex;
+      justify-content: space-around;
+      justify-items: center;
+    }
+    .down{
+      height: 300px;
+      width: 100%;
+      border: 2px solid white;
+      display: flex;
+      justify-content: space-around;
+      justify-items: center;
+    }
+    .up-under{
+      height: 280px;
+      width:450px ;
+      border: 2px solid white;
+      margin-top: 7px;
+    }
+    .down-under{
+      height: 280px;
+      width:450px ;
+      border: 2px solid white;
+      margin-top: 7px;
+    }
+
   
 
 

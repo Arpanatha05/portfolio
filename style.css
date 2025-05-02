@@ -770,6 +770,21 @@ body.dark h1, body.dark .support a {color: black;}
     #name{
       margin-top: 10px;
     }
+    .service{
+      margin-top: 250px;
+    }
+    .up{
+      flex-direction: column;
+    }
+    .down{
+      flex-direction: column;
+    }
+    .up-under{
+      width: 380px;
+    }
+    .down-under{
+      width: 380px;
+    }
   }
 
 

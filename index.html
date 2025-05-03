@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
 </head>
 <body>
 <!-- this is navbar section -->
@@ -183,13 +185,46 @@
         <button class="resume-btn bbb" id="btn-certificates" onclick="showTab('certificates')">Certificate</button>
         </div>
         <div id="skills" class="tab-content">
-          <h2>My Skills</h2>
-          <ul>
-            <li>HTML5, CSS3, JavaScript (ES6+)</li>
-            <li>React, Tailwind CSS, Bootstrap</li>
-            <li>Node.js, Express, MongoDB</li>
-            <li>Git, GitHub, CI/CD basics</li>
-          </ul>
+          <section class="skills-container">
+            <div class="skills-box">
+              <h2>Technical Skills</h2>
+              <div class="skill-bar">
+                <div class="info"><i class="devicon-c-plain colored"></i>C</div>
+                <div class="bar"><div class="progress" style="--value: 90%;">90%</div></div>
+        
+                <div class="info"> <i class="devicon-cplusplus-plain colored" style="color: #044F88 ;"></i>
+                  C++</div>
+                <div class="bar"><div class="progress" style="--value: 70%;">70%</div></div>
+        
+                <div class="info"><i class="fab fa-html5" style="color: #f06529;"></i> HTML</div>
+                <div class="bar"><div class="progress" style="--value: 85%;">85%</div></div>
+        
+                <div class="info"> <i class="fab fa-js" style="color: #f89820;"></i>JAVASCRIPT</div>
+                <div class="bar"><div class="progress" style="--value: 60%;">60%</div></div>
+        
+                <div class="info"><i class="fab fa-css3-alt" style="color: #2965f1;"></i>CSS</div>
+                <div class="bar"><div class="progress" style="--value: 75%;">75%</div></div>
+              </div>
+            </div>
+        
+            <div class="skills-box">
+              <h2>Professional Skills</h2>
+              <div class="circle-wrap">
+                <div class="circle" data-percent="90">
+                  <div class="inner"><strong>90%</strong><span>Creativity</span></div>
+                </div>
+                <div class="circle" data-percent="65">
+                  <div class="inner"><strong>65%</strong><span>Communication</span></div>
+                </div>
+                <div class="circle" data-percent="75">
+                  <div class="inner"><strong>75%</strong><span>Problem Solving</span></div>
+                </div>
+                <div class="circle" data-percent="85">
+                  <div class="inner"><strong>85%</strong><span>Teamwork</span></div>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
         <div id="projects" class="tab-content">
           <h2>My Projects</h2>

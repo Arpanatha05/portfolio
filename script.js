@@ -8,7 +8,7 @@ var typed = new Typed('#element', {
 checkbox.addEventListener("change", () => {
   document.body.classList.toggle("dark")
 })
-
+//this is skill section
 
 function showTab(tabId) {
   const contents = document.querySelectorAll('.tab-content');
@@ -28,3 +28,12 @@ function showTab(tabId) {
 
 // Show Skills tab by default
 showTab('skills');
+
+//skill container
+document.addEventListener("DOMContentLoaded", () => {
+  const circles = document.querySelectorAll(".circle");
+  circles.forEach(circle => {
+    const percent = circle.getAttribute("data-percent");
+    circle.style.background = `conic-gradient(#00e5ff ${percent}%, #1e2a38 ${percent}%)`;
+  });
+});

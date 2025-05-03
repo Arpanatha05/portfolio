@@ -861,6 +861,126 @@ body.dark h1, body.dark .support a {color: black;}
         border-top: none;
       }
     }
+    /* skill container */
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    /* body {
+      font-family: "Segoe UI", sans-serif;
+      background-color: #0d1b2a;
+      color: #fff;
+      padding: 40px 20px;
+    } */
+    
+    .skills-container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+    
+    .skills-box {
+      flex: 1;
+      min-width: 300px;
+      max-width: 500px;
+    }
+    
+    .skills-box h2 {
+      margin-bottom: 20px;
+      border-bottom: 2px solid #00e5ff;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+    
+    .skill-bar {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    
+    .info {
+      margin-bottom: 5px;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+    
+    .info i {
+      margin-right: 8px;
+      color: #00e5ff;
+    }
+    
+    .bar {
+      background: #1e2a38;
+      border-radius: 25px;
+      height: 10px;
+      overflow: hidden;
+      position: relative;
+    }
+    
+    .progress {
+      background: linear-gradient(90deg, #00e5ff, #00b8d4);
+      height: 100%;
+      width: var(--value);
+      border-radius: 25px;
+      text-align: right;
+      font-size: 10px;
+      padding-right: 5px;
+      line-height: 12px;
+      animation: fillProgress 2s ease forwards;
+      opacity: 0.95;
+    }
+    
+    @keyframes fillProgress {
+      0% {
+        width: 0;
+        opacity: 0;
+      }
+      100% {
+        opacity: 0.95;
+      }
+    }
+    
+    .circle-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .circle {
+      width: 120px;
+      height: 120px;
+      background: conic-gradient(#00e5ff 0%, #1e2a38 0%);
+      border-radius: 50%;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .inner {
+      background-color: #0d1b2a;
+      border-radius: 50%;
+      width: 105px;
+      height: 105px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+    
+    .inner strong {
+      font-size: 1.2rem;
+      color: #00e5ff;
+    }
+    
     
  
    

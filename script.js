@@ -8,3 +8,5 @@ var typed = new Typed('#element', {
 checkbox.addEventListener("change", () => {
   document.body.classList.toggle("dark")
 })
+
+

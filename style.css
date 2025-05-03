@@ -732,6 +732,27 @@ body.dark h1, body.dark .support a {color: black;}
       transform: none;
     }
 
+
+
+    /* this is skil section */
+    .resume-container{
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 5rem;
+    }
+    .resume-box h2{
+      font-size: 4.5rem;
+    }
+    .resume-box p{
+      font-size: 1.6rem;
+    }
+    .resume-box .desc{
+      margin: 2rem 0 2.5rem;
+    }
+    .resume-box .resume-btn{
+      width: 100%;
+      height: 5.3rem;
+    }
  
    
 
@@ -822,20 +843,20 @@ body.dark h1, body.dark .support a {color: black;}
       flex-direction: column;
     }
     .up-under{
-      width: 360px;
+      width: 350px;
       margin-top: 35px;
       height: 300px;
-      margin-right: 10px;
+      margin-right: 5px;
     }
     .up-under i{
       padding-top: 15px;
     }
     
     .down-under{
-      width: 360px;
+      width: 350px;
       margin-top: 35px;
       height: 300px;
-      margin-right: 10px;
+      margin-right: 5px;
       /* margin-top: 30px; */
     }
     

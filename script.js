@@ -10,3 +10,21 @@ checkbox.addEventListener("change", () => {
 })
 
 
+function showTab(tabId) {
+  const contents = document.querySelectorAll('.tab-content');
+  const buttons = document.querySelectorAll('.tab-buttons button');
+
+  contents.forEach(content => {
+    content.classList.remove('active');
+  });
+
+  buttons.forEach(button => {
+    button.classList.remove('active');
+  });
+
+  document.getElementById(tabId).classList.add('active');
+  document.getElementById('btn-' + tabId).classList.add('active');
+}
+
+// Show Skills tab by default
+showTab('skills');

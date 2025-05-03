@@ -36,9 +36,9 @@
           <li><a href="#home" class="active">Home</a></li>
           <li><a href="#About">About</a></li>
           <li><a href="#services">Services</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
           <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+          
         </ul>
       </nav>
       
@@ -178,14 +178,36 @@
         <div class="resume-box">
         <h2>Why Hire Me?</h2>
         <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum temporibus dolorem ducimusbeatae iure amet.</p>
-        <button class="resume-btn">Education</button>
-        <button class="resume-btn">Skills</button>
-        <button class="resume-btn">About Me</button>
+        <button class="resume-btn" id="btn-skills" onclick="showTab('skills')">Skills</button>
+        <button class="resume-btn bbb" id="btn-projects" onclick="showTab('projects')">Projects</button>
+        <button class="resume-btn bbb" id="btn-certificates" onclick="showTab('certificates')">Certificate</button>
         </div>
-        <div class="resume-box">
-          <div class="resume-detail experience"></div>
-          <h2 class="heading"><span>Experience</span></h2>
-          <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum temporibus dolorem ducimusbeatae iure amet.</p>
+        <div id="skills" class="tab-content">
+          <h2>My Skills</h2>
+          <ul>
+            <li>HTML5, CSS3, JavaScript (ES6+)</li>
+            <li>React, Tailwind CSS, Bootstrap</li>
+            <li>Node.js, Express, MongoDB</li>
+            <li>Git, GitHub, CI/CD basics</li>
+          </ul>
+        </div>
+        <div id="projects" class="tab-content">
+          <h2>My Projects</h2>
+          <ul>
+            <li>🌐 Portfolio Website – Personal branding with dark mode</li>
+            <li>📋 Task Manager – Full CRUD app with localStorage</li>
+            <li>☁️ Weather Dashboard – OpenWeather API & location-based UI</li>
+            <li>🛒 E-commerce UI – Product catalog, filters, cart</li>
+          </ul>
+        </div>
+    
+        <div id="certificates" class="tab-content">
+          <h2>My Certificates</h2>
+          <ul>
+            <li>Frontend Development – Meta Coursera (2024)</li>
+            <li>JavaScript Algorithms – freeCodeCamp</li>
+            <li>Responsive Web Design – Udemy</li>
+          </ul>
         </div>
       </div>
     </section>

@@ -1045,8 +1045,69 @@ body.dark h1, body.dark .support a {color: black;}
     
     
     
-    
-    
+    /* certificate part */
+   
+
+    .thumbnail {
+      width: 300px;
+      border-radius: 12px;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .thumbnail:hover {
+      transform: scale(1.03);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    }
+
+    /* Modal */
+    .modal {
+      position: fixed;
+      top: 0; left: 0;
+      width: 800px;
+      height: 800px;
+      display: none;
+      justify-content: center;
+      align-items: center;
+      background: rgba(0,0,0,0.8);
+      backdrop-filter: blur(3px);
+      z-index: 1000;
+      animation: fadeIn 0.3s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .modal img {
+      max-width: 800px;
+      max-height: 800px;
+      border-radius: 16px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+      animation: zoomIn 0.3s ease;
+    }
+
+    @keyframes zoomIn {
+      from { transform: scale(0.8); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 30px;
+      right: 40px;
+      font-size: 2.5rem;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+      user-select: none;
+    }
+
+    .close-btn:hover {
+      color: #00ffee;
+    }
     
  
    
@@ -1188,7 +1249,27 @@ body.dark h1, body.dark .support a {color: black;}
     .desc{
       font-size: 15px;
     }
-    
+    .modal {
+      height: 330px;
+      width: 330px;
+      
+    }
+    .modal img{
+      height: 330px;
+      width: 330px;
+      
+      margin-right: 125px;
+    }
+    .close-btn {
+      position: absolute;
+      top: 15pxpx;
+      right: 20px;
+      font-size: 2.5rem;
+      color:white;
+      cursor: pointer;
+      font-weight: bold;
+      user-select: none;
+    }
   }
   
 

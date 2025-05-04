@@ -37,3 +37,24 @@ document.addEventListener("DOMContentLoaded", () => {
     circle.style.background = `conic-gradient(#00e5ff ${percent}%, #1e2a38 ${percent}%)`;
   });
 });
+//certificate
+const thumbnail = document.getElementById('thumbnail');
+const modal = document.getElementById('modal');
+const modalImage = document.getElementById('modalImage');
+const closeBtn = document.getElementById('closeBtn');
+
+thumbnail.addEventListener('click', () => {
+  modalImage.src = thumbnail.src;
+  modal.style.display = 'flex';
+});
+
+closeBtn.addEventListener('click', () => {
+  modal.style.display = 'none';
+});
+
+// Close modal when clicking outside image
+modal.addEventListener('click', (e) => {
+  if (e.target === modal) {
+    modal.style.display = 'none';
+  }
+});

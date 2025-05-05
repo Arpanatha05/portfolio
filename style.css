@@ -973,6 +973,7 @@ body.dark {
       margin-bottom: 20px;
     }
     .project-btn{
+      font-size: 14px;
       margin-left: 15px;
      width: 100px;
      margin-top: 40px;
@@ -1262,7 +1263,16 @@ button:hover {
 
 body.dark {
   background-color: #e9ecef;
-  
+  color: black;
+  .About{
+    color: #000;
+  }
+  .text{
+    color: #000;
+  }
+  .tab-content{
+    color:white;
+  }
 } /* #9b59b6 */
   
 

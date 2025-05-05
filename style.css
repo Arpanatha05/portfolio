@@ -228,58 +228,6 @@ body.dark {
  
   
 }
-/* this is dark and light */
-
-
-* {box-sizing: border-box;}
-
-
-body.dark {background-color: #e9ecef;} /* #9b59b6 */
-
-body.dark h1, body.dark .support a {color: black;}
-
-.checkbox {
-  opacity: 0;
-  position: absolute;
-}
-
-.checkbox-label {
-  background-color: #111;
-  width: 50px;
-  height: 26px;
-  border-radius: 50px;
-  position: relative;
-  padding: 5px;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.fa-moon {color: #f1c40f;}
-
-.fa-sun {color: #f39c12;}
-
-.checkbox-label .ball {
-  background-color: #fff;
-  width: 22px;
-  height: 22px;
-  position: absolute;
-  left: 2px;
-  top: 2px;
-  border-radius: 50%;
-  transition: transform 0.2s linear;
-}
-
-.checkbox:checked + .checkbox-label .ball {
-  transform: translateX(24px);
-}
-
-
-
-
-
-
 
 
 
@@ -1108,8 +1056,262 @@ body.dark h1, body.dark .support a {color: black;}
     .close-btn:hover {
       color: #00ffee;
     }
-    
- 
+
+    /* this is contact section */
+    /* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+/* Contact Section */
+.contact-container {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 0 30px;
+  margin-top: 200px;
+}
+
+.contact-container h1 {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 50px;
+}
+
+.contact-container h1 span {
+  color: #00fff2;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.form-left,
+.form-right {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input,
+textarea {
+  background: transparent;
+  border: 2px solid #00ffb3;
+  border-radius: 5px;
+  padding: 12px;
+  color: white;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #00ffee;
+}
+
+textarea {
+  height: 165px;
+  resize: none;
+}
+
+button {
+  align-self: flex-start;
+  padding: 10px 20px;
+  border: none;
+  background-color: #00fff2;
+  color: black;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 0 15px #00fff2;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #00e6d1;
+}
+#skill12{
+  margin-top: 200px;
+}
+
+/* footer part */
+.footer {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 60px 20px 20px;
+  position: relative;
+  font-family: 'Segoe UI', sans-serif;
+  
+}
+
+.footer-container {
+  max-width: 1200px;
+  height: 60px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.footer-brand h2 {
+  font-size: 1.8rem;
+}
+
+.footer-brand span {
+  color: #00fff2;
+}
+
+.footer-brand p {
+  max-width: 300px;
+  line-height: 1.6;
+  margin-top: 10px;
+  color: #ccc;
+}
+
+.footer-links h3,
+.footer-social h3 {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  color: #00fff2;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin: 8px 0;
+}
+
+.footer-links ul a {
+  color: #ccc;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-links ul a:hover {
+  color: #00fff2;
+}
+
+.social-icons a {
+  font-size: 1.5rem;
+  margin-right: 15px;
+  color: #ccc;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #00fff2;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  margin-top: 40px;
+  border-top: 1px solid #222;
+  padding-top: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.footer-bottom p {
+  color: #999;
+}
+
+/* Scroll To Top Button */
+#scrollTopBtn {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  background: #00fff2;
+  color: #000;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: 0 0 10px #00fff2;
+  transition: 0.3s;
+  display: none;
+}
+
+#scrollTopBtn:hover {
+  background-color: #00e6d1;
+}
+
+
+
+
+/* this is dark and light */
+
+
+* {box-sizing: border-box;}
+
+
+body.dark {
+  background-color: #e9ecef;
+  
+} /* #9b59b6 */
+  
+
+body.dark h1, body.dark .support a {color: black;}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox-label {
+  background-color: #111;
+  width: 50px;
+  height: 26px;
+  border-radius: 50px;
+  position: relative;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fa-moon {color: #f1c40f;}
+
+.fa-sun {color: #f39c12;}
+
+.checkbox-label .ball {
+  background-color: #fff;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .checkbox-label .ball {
+  transform: translateX(24px);
+}
+
+
+
+
+
+
+
+
    
 
   @keyframes slidetop{
@@ -1269,6 +1471,16 @@ body.dark h1, body.dark .support a {color: black;}
       cursor: pointer;
       font-weight: bold;
       user-select: none;
+    }
+    .contact-container{
+      margin-top: 0px;
+    }
+    #skill12{
+      margin-top: 0px;
+    }
+    .footer-container {
+      height: 250px;
+      gap: 4px;
     }
   }
   

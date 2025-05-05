@@ -59,3 +59,19 @@ modal.addEventListener('click', (e) => {
     modal.style.display = 'none';
   }
 });
+//contact section
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+  alert("Your message has been sent!");
+  this.reset();
+});
+//excel form
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwVhKJsA968KcMAesxFSXiZx-BMow5gb3jFZE_QPGeVouwFmxdmiA1apvEebDH8lAib/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })

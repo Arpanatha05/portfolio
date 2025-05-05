@@ -293,7 +293,7 @@
     <div class="form-left">
       <input name="Name" type="text" placeholder="Full Name" required />
       <input name="Email" type="email" placeholder="Email" required />
-      <input name="Phone no" type="tel" placeholder="Phone Number" required />
+      <input name="Phone" type="tel" placeholder="Phone Number" required />
       <input name="Sub" type="text" placeholder="Subject" required />
     </div>
     <div class="form-right">
@@ -301,6 +301,17 @@
       <button type="submit">Send Message</button>
     </div>
   </form>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwQH-QM0oeBCzJlrM3GeVJK9x7A0uxxVReIrffx08h2zzKDayMJQT5stneNZLQi6XnZ/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 </section>
 
 <!-- footer area -->

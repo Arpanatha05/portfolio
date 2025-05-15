@@ -1276,6 +1276,10 @@ body.dark {
   .info{
     color: #000;
   }
+  input,
+textarea{
+  color: #000000;
+}
 } /* #9b59b6 */
   
 

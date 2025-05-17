@@ -1,4 +1,11 @@
 // for home section
+const menuButton = document.querySelector('.hamburger');
+
+menuButton.addEventListener('click', () => {
+  menuButton.classList.toggle('active');
+});
+
+
 var typed = new Typed('#element', {
     strings: ['Frontend Devloper', 'Web designer','B-Tech IT student','Youtuber'],
     typeSpeed: 50,

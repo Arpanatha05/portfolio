@@ -96,6 +96,24 @@
   .toggle-menu {
     display: none;
   }
+  /* Active state */
+.hamburger.active .bar:nth-child(1) {
+  transform: rotate(45deg) translateY(11.5px);
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: rotate(-45deg) translateY(-11.5px);
+}
+
+/* Hover effect */
+.hamburger:hover .bar {
+  background-color:#00ffee;
+}
+
 
   /* logo effect */
   .logo{

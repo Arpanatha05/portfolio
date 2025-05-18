@@ -72,3 +72,9 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
   alert("Your message has been sent!");
   this.reset();
 });
+
+
+//know more
+document.getElementById("btn1").addEventListener("click", function () {
+  window.location.href = "bot.html"; // Change this if your home page is at a different path
+});

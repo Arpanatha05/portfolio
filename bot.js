@@ -114,5 +114,8 @@ function respondToUser(msg) {
     appendImage("bot", "arpan.jpg"); // Make sure your image is named 'me.jpg'
   }
 }
-
+//back arrow
+document.querySelector(".back-arrow").addEventListener("click", function () {
+  window.location.href = "index.html"; // Change this if your home page is at a different path
+});
 

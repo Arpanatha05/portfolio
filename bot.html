@@ -14,6 +14,7 @@
   <div class="chat-wrapper">
     <div class="chat-window">
       <div class="chat-header">
+        <div class="back-arrow"></div>
         <div class="icon"><h6> Online</h6></div>
         <span class="green-dot"></span>
         <p>Personal Chatbot
@@ -24,8 +25,13 @@
             
         
          </div>
-      <div class="chat-box" id="chat-box"></div>
+         
+      <div class="chat-box" id="chat-box">
+        <div class="atfirst">Hi ! How can i help you?</div>
+      </div>
+      
       <div class="input-area">
+        
         <input type="text" id="user-input" placeholder="Ask me anything..." />
         <button onclick="sendMessage()">Send</button>
       </div>

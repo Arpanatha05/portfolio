@@ -58,8 +58,7 @@ function respondToUser(msg) {
     response = "My name is Arpan Atha.";
   } else if(msg.includes("Hi") ||msg.includes("hi") ||msg.includes("Hello")){
     response = "Hello ! How can i help you ?";
-  }
-  else if (msg.includes("education")) {
+  }else if (msg.includes("education")) {
     response = "I study Under graduate in B-Tech in Information Technology";
   } else if (msg.includes("skills")) {
     response = "My key skills include HTML, CSS, JavaScript, c language, c++ language, and UI/UX design.";
@@ -95,7 +94,7 @@ function respondToUser(msg) {
     response = "My favourite singer is Arijit singh";
   }else if (msg.includes("Actor")) {
     response = "My favourite color is Akshay kumar";
-  }else if (msg.includes("creator")||msg.includes("Creats")) {
+  }else if (msg.includes("creator")|| msg.includes("Creats")) {
     response = "Arpan Atha Creats me";
   }else if (msg.includes("Who are you")) {
     response = "I am a personal chatbot .I am gives you presonal information of my which in my database";

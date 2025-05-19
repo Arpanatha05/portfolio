@@ -55,32 +55,37 @@ function respondToUser(msg) {
   let showImage = false;
 
   if (msg.includes("name")) {
-    response = "My name is [Your Name].";
-  } else if(msg.includes("hi")){
-    response = "Hello ! How can i help you";
+    response = "My name is Arpan Atha.";
+  } else if(msg.includes("Hi") ||msg.includes("hi")){
+    response = "Hello ! How can i help you ?";
   }
   else if (msg.includes("education")) {
     response = "I hold a Bachelor's degree in Computer Science from XYZ University.";
   } else if (msg.includes("skills")) {
-    response = "My key skills include HTML, CSS, JavaScript, React, Node.js, and UI/UX design.";
-  } else if (msg.includes("hobbies")) {
-    response = "I love photography, gaming, coding, and watching sci-fi movies.";
+    response = "My key skills include HTML, CSS, JavaScript, c language, c++ language, and UI/UX design.";
+  } else if (msg.includes("hobbies") ||msg.includes("hobby") ) {
+    response = "I love photography, gaming, coding, and watching Detective movies.";
   } else if (msg.includes("goal") || msg.includes("dream")) {
     response = "My dream is to become a full-stack developer and build impactful software.";
   } else if (msg.includes("family")) {
     response = "I come from a family of five, with amazing parents and two siblings.";
   } else if (msg.includes("project")) {
-    response = "I've worked on a portfolio site, an e-commerce app, and now this chatbot!";
+    response = "I've worked on a portfolio site, an medicine reminder app, and now this chatbot!";
   } else if (msg.includes("age")) {
     response = "I'm 23 years old.";
-  } else if (msg.includes("location")) {
-    response = "I'm currently based in New Delhi, India.";
-  } else if (msg.includes("picture") || msg.includes("photo") || msg.includes("image")) {
+  } else if (msg.includes(" current location")) {
+    response = "I'm currently based in kolkata, Westbengal.";
+  } else if (msg.includes(" Home location")) {
+    response = "My actual location is Bankura ,West Bengal";
+  }else if (msg.includes("Hello")) {
+    response = "Hello ,Whats up!!";
+  }else if (msg.includes("picture") || msg.includes("photo") || msg.includes("image")) {
     response = "Here is my picture:";
     showImage = true;
   } else {
     response = "Sorry, I don't have an answer for that. Ask about my education, skills, hobbies, or goals.";
   }
+  
 
   appendMessage("bot", response);
 

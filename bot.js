@@ -56,11 +56,11 @@ function respondToUser(msg) {
 
   if (msg.includes("name")) {
     response = "My name is Arpan Atha.";
-  } else if(msg.includes("Hi") ||msg.includes("hi")){
+  } else if(msg.includes("Hi") ||msg.includes("hi") ||msg.includes("Hello")){
     response = "Hello ! How can i help you ?";
   }
   else if (msg.includes("education")) {
-    response = "I hold a Bachelor's degree in Computer Science from XYZ University.";
+    response = "I study Under graduate in B-Tech in Information Technology";
   } else if (msg.includes("skills")) {
     response = "My key skills include HTML, CSS, JavaScript, c language, c++ language, and UI/UX design.";
   } else if (msg.includes("hobbies") ||msg.includes("hobby") ) {
@@ -72,18 +72,40 @@ function respondToUser(msg) {
   } else if (msg.includes("project")) {
     response = "I've worked on a portfolio site, an medicine reminder app, and now this chatbot!";
   } else if (msg.includes("age")) {
-    response = "I'm 23 years old.";
-  } else if (msg.includes(" current location")) {
+    response = "I'm 20 years old.";
+  } else if (msg.includes("current location")) {
     response = "I'm currently based in kolkata, Westbengal.";
-  } else if (msg.includes(" Home location")) {
+  } else if (msg.includes("Home location")) {
     response = "My actual location is Bankura ,West Bengal";
-  }else if (msg.includes("Hello")) {
-    response = "Hello ,Whats up!!";
-  }else if (msg.includes("picture") || msg.includes("photo") || msg.includes("image")) {
+  }else if (msg.includes("Girlfriend")) {
+    response = "No i am single now";
+  }else if (msg.includes("College")) {
+    response = "My College Name is Techno Main Salt Lake";
+  }else if (msg.includes("School")) {
+    response = "I am pass Out From Bankura Banga Vidyalaya";
+  }else if (msg.includes("10th marks")) {
+    response = " I got 90% marks in madhyamik";
+  }else if (msg.includes("Hs marks")) {
+    response = "I got 89% marks in HS";
+  }else if (msg.includes("Food")) {
+    response = "My favourite Food is Chiken Kosha";
+  }else if (msg.includes("color")) {
+    response = "My favourite color is White";
+  }else if (msg.includes("Singer")) {
+    response = "My favourite singer is Arijit singh";
+  }else if (msg.includes("Actor")) {
+    response = "My favourite color is Akshay kumar";
+  }else if (msg.includes("creator")||msg.includes("Creats")) {
+    response = "Arpan Atha Creats me";
+  }else if (msg.includes("Who are you")) {
+    response = "I am a personal chatbot .I am gives you presonal information of my which in my database";
+  }
+
+  else if (msg.includes("picture") || msg.includes("photo") || msg.includes("image")) {
     response = "Here is my picture:";
     showImage = true;
   } else {
-    response = "Sorry, I don't have an answer for that. Ask about my education, skills, hobbies, or goals.";
+    response = "Sorry, I don't have an answer for that. Ask about my education, skills, hobbies, or goals etc...";
   }
   
 

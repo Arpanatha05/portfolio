@@ -93,11 +93,15 @@ function respondToUser(msg) {
   }else if (msg.includes("singer")) {
     response = "My favourite singer is Arijit singh";
   }else if (msg.includes("actor")) {
-    response = "My favourite color is Akshay kumar";
+    response = "My favourite Actor is Akshay kumar";
   }else if (msg.includes("creator")|| msg.includes("creats")) {
     response = "Arpan Atha Creats me";
   }else if (msg.includes("who are you")) {
-    response = "I am a personal chatbot .I am gives you presonal information of my which in my database";
+    response = "I am a personal chatbot .I can gives you presonal information of my which is in my database";
+  }else if (msg.includes("youtuber")) {
+    response = "My favourite youtuber is Asish Chanchalani";
+  }else if (msg.includes("actress")) {
+    response = "My favourite Actress is Shradha Kapoor";
   }
 
   else if (msg.includes("picture") || msg.includes("photo") || msg.includes("image")) {

@@ -104,8 +104,12 @@ function respondToUser(msg) {
     response = "My favourite Actress is Shradha Kapoor";
   }else if (msg.includes("whats up")) {
     response = "I am fine .How are you??";
-  }else if (msg.includes("fine")||msg.includes("fine")) {
+  }else if (msg.includes("fine")||msg.includes("ok")) {
     response = "That's Great";
+  }else if (msg.includes("inspiration")) {
+    response = "My father is my inspiration";
+  }else if (msg.includes("birth")||msg.includes("born")) {
+    response = "My birthdate is 16 nov 2005";
   }
 
   else if (msg.includes("picture") || msg.includes("photo") || msg.includes("image")) {
@@ -119,11 +123,11 @@ function respondToUser(msg) {
   appendMessage("bot", response);
 
   if (showImage) {
-    appendImage("bot", "arpan.jpg"); // Make sure your image is named 'me.jpg'
+    appendImage("bot", "arpan.jpg"); 
   }
 }
 //back arrow
 document.querySelector(".back-arrow").addEventListener("click", function () {
-  window.location.href = "index.html"; // Change this if your home page is at a different path
+  window.location.href = "index.html"; 
 });
 

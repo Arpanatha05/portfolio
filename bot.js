@@ -102,7 +102,7 @@ function respondToUser(msg) {
     response = "My favourite youtuber is Asish Chanchalani";
   }else if (msg.includes("actress")) {
     response = "My favourite Actress is Shradha Kapoor";
-  }else if (msg.includes("whats up")) {
+  }else if (msg.includes("what's up")) {
     response = "I am fine .How are you??";
   }else if (msg.includes("fine")||msg.includes("ok")) {
     response = "That's Great";

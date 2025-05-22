@@ -112,6 +112,8 @@ function respondToUser(msg) {
     response = "My birthdate is 16 nov 2005";
   }else if (msg.includes("arpan")) {
     response = "My name is Arpan";
+  }else if (msg.includes("religion")) {
+    response = "I am a Pure Hindu Boy";
   }
 
   else if (msg.includes("picture") || msg.includes("photo") || msg.includes("image")) {

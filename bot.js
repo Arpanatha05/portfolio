@@ -110,6 +110,8 @@ function respondToUser(msg) {
     response = "My father is my inspiration";
   }else if (msg.includes("birth")||msg.includes("born")) {
     response = "My birthdate is 16 nov 2005";
+  }else if (msg.includes("arpan")) {
+    response = "My name is Arpan";
   }
 
   else if (msg.includes("picture") || msg.includes("photo") || msg.includes("image")) {

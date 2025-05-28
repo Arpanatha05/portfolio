@@ -114,6 +114,8 @@ function respondToUser(msg) {
     response = "My name is Arpan";
   }else if (msg.includes("religion")) {
     response = "I am a Pure Hindu Boy";
+  }else if (msg.includes("about")) {
+    response = "I am a Personal Chatbot";
   }
 
   else if (msg.includes("picture") || msg.includes("photo") || msg.includes("image")) {

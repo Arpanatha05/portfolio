@@ -117,6 +117,9 @@ function respondToUser(msg) {
   }else if (msg.includes("about")) {
     response = "I am a Personal Chatbot";
   }
+  else if (msg.includes("subject")) {
+    response = "My favourite subject is Mathematics";
+  }
 
   else if (msg.includes("picture") || msg.includes("photo") || msg.includes("image")) {
     response = "Here is my picture:";

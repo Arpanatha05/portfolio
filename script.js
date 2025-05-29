@@ -74,6 +74,7 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
 });
 
 
+
 //know more
 document.getElementById("btn1").addEventListener("click", function () {
   window.location.href = "bot.html"; // Change this if your home page is at a different path

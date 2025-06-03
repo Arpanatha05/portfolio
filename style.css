@@ -1339,19 +1339,33 @@ body.dark h1, body.dark .support a {color: black;}
 .checkbox:checked + .checkbox-label .ball {
   transform: translateX(24px);
 }
+/* 
+this is for dark and light mode border area */
+.darklight {
+  
+  border-radius: 16px;
+  border: 2px solid transparent;
+  background: 
+    linear-gradient(to right, #1f1f1f, #1f1f1f) padding-box, /* fallback content bg */
+    linear-gradient(120deg, #00f5c3, #4facfe, #f093fb) border-box;
+  background-clip: padding-box, border-box;
+  color: #f0f0f0;
+  font-size: 1rem;
+  box-shadow: 0 0 10px rgba(100, 100, 255, 0.2);
+  transition: all 0.3s ease;
+}
 
-.darklight{
-  border: 2px solid #00ffee;
-  border-radius: 14px;
+/* Light theme support */
+@media (prefers-color-scheme: light) {
+  .darklight {
+    background: 
+      linear-gradient(to right, #ffffff, #ffffff) padding-box,
+      linear-gradient(120deg, #00f5c3, #4facfe, #f093fb) border-box;
+    color: #1a1a1a;
+  }
 }
 
 
-
-
-
-
-
-   
 
   @keyframes slidetop{
     0%{

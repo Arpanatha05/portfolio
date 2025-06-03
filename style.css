@@ -1340,6 +1340,10 @@ body.dark h1, body.dark .support a {color: black;}
   transform: translateX(24px);
 }
 
+.darklight{
+  border: 2px solid #00ffee;
+  border-radius: 14px;
+}
 
 
 

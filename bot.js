@@ -59,7 +59,7 @@ function respondToUser(msg) {
   } else if(msg.includes("Hi") ||msg.includes("hi") ||msg.includes("hello")){
     response = "Hello ! How can i help you ?";
   }else if (msg.includes("education")) {
-    response = "I study Under graduate in B-Tech in Information Technology";
+    response = "I study B-Tech in Information Technology";
   } else if (msg.includes("skills")) {
     response = "My key skills include HTML, CSS, JavaScript, c language, c++ language, and UI/UX design.";
   } else if (msg.includes("hobbies") ||msg.includes("hobby") ) {
@@ -67,13 +67,13 @@ function respondToUser(msg) {
   } else if (msg.includes("goal") || msg.includes("dream")) {
     response = "My dream is to become a full-stack developer and build impactful software.";
   } else if (msg.includes("family")) {
-    response = "I come from a family of five, with amazing parents and two siblings.";
+    response = "I come from a family of Three, with amazing parents.";
   } else if (msg.includes("project")) {
     response = "I've worked on a portfolio site, an medicine reminder app, and now this chatbot!";
   } else if (msg.includes("age")) {
     response = "I'm 20 years old.";
   } else if (msg.includes("current location")) {
-    response = "I'm currently based in kolkata, Westbengal.";
+    response = "I'm currently based in Sector-V kolkata, West Bengal.";
   } else if (msg.includes("home location")) {
     response = "My actual location is Bankura ,West Bengal";
   }else if (msg.includes("girlfriend")) {
@@ -83,13 +83,13 @@ function respondToUser(msg) {
   }else if (msg.includes("school")) {
     response = "I am pass Out From Bankura Banga Vidyalaya";
   }else if (msg.includes("10th marks")) {
-    response = " I got 90% marks in madhyamik";
+    response = " I got 93% marks in madhyamik";
   }else if (msg.includes("hs marks")) {
     response = "I got 89% marks in HS";
   }else if (msg.includes("food")) {
     response = "My favourite Food is Chiken Kosha";
   }else if (msg.includes("color")) {
-    response = "My favourite color is White";
+    response = "My favourite color is Red";
   }else if (msg.includes("singer")) {
     response = "My favourite singer is Arijit singh";
   }else if (msg.includes("actor")) {

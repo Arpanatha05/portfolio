@@ -111,7 +111,7 @@ function respondToUser(msg) {
   }else if (msg.includes("birth")||msg.includes("born")) {
     response = "My birthdate is 16 nov 2005";
   }else if (msg.includes("arpan")) {
-    response = "My name is Arpan";
+    response = "My name is Arpan Atha";
   }else if (msg.includes("religion")) {
     response = "I am a Pure Hindu Boy";
   }else if (msg.includes("about")) {
@@ -119,6 +119,9 @@ function respondToUser(msg) {
   }
   else if (msg.includes("subject")) {
     response = "My favourite subject is Mathematics";
+  }
+  else if (msg.includes("car")) {
+    response = "My favourite car is G Wagon,Fortuner";
   }
 
   else if (msg.includes("picture") || msg.includes("photo") || msg.includes("image")) {

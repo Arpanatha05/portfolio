@@ -82,9 +82,9 @@ function respondToUser(msg) {
     response = "My College Name is Techno Main Salt Lake";
   }else if (msg.includes("school")) {
     response = "I am pass Out From Bankura Banga Vidyalaya";
-  }else if (msg.includes("10th marks")) {
+  }else if (msg.includes("madhymik marks")||msg.includes("madhymik percent")) {
     response = " I got 93% marks in madhyamik";
-  }else if (msg.includes("hs marks")) {
+  }else if (msg.includes("hs marks")||msg.includes("hs percentage")) {
     response = "I got 89% marks in HS";
   }else if (msg.includes("food")) {
     response = "My favourite Food is Chiken Kosha";
@@ -121,7 +121,7 @@ function respondToUser(msg) {
     response = "My favourite subject is Mathematics";
   }
   else if (msg.includes("car")) {
-    response = "My favourite car is G Wagon,Fortuner";
+    response = "My favourite car is G-Wagon,Fortuner,Thar";
   }
 
   else if (msg.includes("picture") || msg.includes("photo") || msg.includes("image")) {

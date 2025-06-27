@@ -80,3 +80,7 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
 document.getElementById("btn1").addEventListener("click", function () {
   window.location.href = "bot.html"; // Change this if your home page is at a different path
 });
+
+ function goToaNewPage() {
+      window.location.href = "index.html";
+    }

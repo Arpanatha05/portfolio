@@ -1301,6 +1301,91 @@ body.dark {
 textarea{
   color: #000000;
 }
+#btn1{
+  background-color: #e9ecef;
+  color: black;
+}
+#btn1:hover{
+  background-color: #00ffee;
+  color: #000;
+ 
+}
+#btn2{
+  background-color: #e9ecef;
+  color: black;
+}
+#btn2:hover{
+  background-color: #00ffee;
+  color: #000;
+}
+.resume-btn{
+   background-color: #e9ecef;
+  color: black;
+}
+.resume-btn:hover{
+   background-color: #e9ecef;
+  color: black;
+}
+.inner{
+  background-color:#e9ecef ;
+  color: black;
+}
+.project-card{
+  background-color:#e9ecef;
+  color: black;
+}
+.project-btn{
+  background-color: #e9ecef;
+  color: black;
+}
+.navbar{
+  background-color: #dcdcdc;
+}
+.nav-list a{
+  color: #000;
+}
+.footer{
+  background-color: #dcdcdc;
+  color: #000;
+}
+.footer-bottom{
+  border-top: none;
+}
+.footer-brand h2{
+  color: #000;
+}
+.footer-brand p{
+  color: #000;
+}
+.social-icons i{
+  color: #000;
+}
+.social-icons i:hover{
+  color: #00ffee;
+}
+.footer-bottom p{
+  color: #000000;
+}
+.bar{
+  background-color: #000000;
+}
+.nav-list{
+  background-color:#dcdcdc ;
+}
+.logo{
+  background-color:#dcdcdc ;
+  color: #000;
+}
+.logo::after{
+   background-color:#dcdcdc ;
+   
+}
+.checkbox-label {
+  background-color: #dcdcdc;
+}
+.checkbox-label .ball {
+  background-color: #000;
+}
 } /* #9b59b6 */
   
 
@@ -1413,6 +1498,138 @@ this is for dark and light mode border area */
   }
 
   @media (max-width: 768px){
+    .home{
+      
+      flex-direction: column-reverse;
+
+    }
+    .picture{
+    height: 300px;
+    width: 300px;
+    margin-top: 200px;
+    margin-left: 370px;
+    }
+    .About{
+      flex-direction: column;
+    }
+    .headshot{
+    height: 300px;
+    width: 300px;
+    margin-top: 200px;
+    margin-left: 10px;
+    }
+    .description{
+      height: 350px;
+      width: 350px;
+      margin-top: 30px;
+    }
+    #name{
+      margin-top: 10px;
+    }
+    .service{
+      margin-top: 250px;
+      margin-left: 200px;
+      
+    }
+    .service h1{
+      margin-right: 150px;
+    }
+    .huv{
+      margin-left: 200px;
+    }
+    .up{
+      flex-direction: column;
+      margin-bottom: 420px;
+    }
+    .down{
+      flex-direction: column;
+    }
+    .up-under{
+      width: 350px;
+      margin-top: 35px;
+      height: 300px;
+      margin-right: 5px;
+    }
+    .up-under i{
+      padding-top: 15px;
+      font-size: 25px;
+    }
+    
+    
+    .down-under{
+      width: 350px;
+      margin-top: 35px;
+      height: 300px;
+      margin-right: 5px;
+      /* margin-top: 30px; */
+    }
+    
+    .down-under i{
+      padding-top: 15px;
+      font-size: 25px;
+    }
+    .resume{
+      padding-top: 420px;
+      
+    }
+    .resume-container{
+      display: flex;
+      flex-direction: column;
+    }
+    .resume-btn{
+      display:inline-flex;
+      justify-content: space-evenly;
+      
+    }
+    .bbb{
+      margin-left: 20px;
+    }
+    .resume-box{
+      height: 300px;
+      width: 350px;
+    }
+    .project-btn{
+      margin-left: 7px;
+      
+    }
+    .desc{
+      font-size: 15px;
+    }
+    .modal {
+      height: 330px;
+      width: 330px;
+      
+    }
+    .modal img{
+      height: 330px;
+      width: 330px;
+      
+      margin-right: 125px;
+    }
+    .close-btn {
+      position: absolute;
+      top: 15pxpx;
+      right: 20px;
+      font-size: 2.5rem;
+      color:white;
+      cursor: pointer;
+      font-weight: bold;
+      user-select: none;
+    }
+    .contact-container{
+      margin-top: 0px;
+    }
+    #skill12{
+      margin-top: 0px;
+    }
+    .footer-container {
+      height: 250px;
+      gap: 4px;
+    }
+  }
+ 
+  
+  @media (max-width: 550px){
     .home{
       
       flex-direction: column-reverse;
@@ -1539,6 +1756,10 @@ this is for dark and light mode border area */
       gap: 4px;
     }
   }
+  
+
+
+  
   
 
 
